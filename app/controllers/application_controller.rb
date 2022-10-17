@@ -46,14 +46,7 @@ class ApplicationController < Sinatra::Base
 
   get '/no_money' do
     erb :no_money
-  end
-
-  post '/account' do
-    @user = User.find_by_id(session[:user_id])
-    erb :account
-  end
-
-  
+  end 
 
   get "/login" do
     erb :login
